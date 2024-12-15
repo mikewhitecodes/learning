@@ -1,0 +1,45 @@
+
+/* regular body color with no sizing 
+body {
+    background-color: red;
+}
+
+ When width hits 800px, body color becomes orange 
+@media (min-width: 800px){
+    body {
+        background-color: orange;
+    }
+}
+
+ When width hits 1200px, body color becomes yellow 
+@media (min-width: 1200px){
+    body {
+        background-color: yellow;
+    }
+}
+
+
+ 'only' is a 'logical operator' that says only browsers who support media queries will apply these styles. Some older browsers do not support media queries.
+
+ex:
+@media only screen and (max-width: '768px) 
+
+
+'screen' is the media type in this case. There are other media types like 'print' or 'all', but 'screen' is what helps us write styles for different device screen */
+
+
+body {
+    background-color: red;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: yellow;
+    }
+}
